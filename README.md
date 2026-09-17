@@ -63,3 +63,10 @@ A seção de palestrantes agora possui um botão "Ver currículo" para cada conv
 
 ### V7 — logos sem caixa
 As imagens foram recortadas ao conteúdo visível após a remoção do fundo, reduzindo o canvas transparente ao mínimo e eliminando a aparência de quadrado branco.
+
+### V8 — correção definitiva do logo BM
+O fundo quadriculado incorporado na imagem original do brasão foi removido por recorte circular com borda suavizada. O logo passa a ter somente a área do brasão, com transparência real no exterior.
+
+
+### V9 — fotos e currículos visíveis
+A seção de palestrantes agora exibe a foto de cada palestrante acima do nome, tema e currículo. Os currículos ficam visíveis diretamente na página, sem necessidade de clicar em botão.

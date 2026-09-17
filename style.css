@@ -71,3 +71,38 @@ fieldset{border:0;padding:0;margin:10px 0 17px}legend{font-size:11px;font-weight
 .logos img, .brand img, .footer-logos img {
   mix-blend-mode: normal;
 }
+
+/* V8 — presença institucional dos logos */
+.logos img{height:94px;width:94px}
+.logos img:nth-of-type(3){width:112px;height:94px}
+.brand img{width:60px;height:60px}
+.footer-logos img{width:42px;height:42px}
+@media(max-width:620px){
+  .logos img{width:72px;height:72px}
+  .logos img:nth-of-type(3){width:88px;height:72px}
+  .brand img{width:58px;height:58px}
+}
+
+/* V9 — fotos dos palestrantes e currículos visíveis */
+.speaker{overflow:hidden;padding:0;background:#fff}
+.speaker-photo{
+  display:block;
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  object-position:center 25%;
+  border-bottom:3px solid var(--gold);
+}
+.speaker-content{padding:26px 30px 30px}
+.speaker .cv-panel.visible{
+  display:block;
+  margin-top:16px;
+  border-top:1px solid var(--line);
+  padding-top:14px;
+}
+.speaker .cv-panel.visible ul{margin:0;padding-left:17px;color:var(--muted);font-size:12px}
+.speaker .cv-panel.visible li{margin-bottom:7px}
+@media(max-width:620px){
+  .speaker-photo{height:260px}
+  .speaker-content{padding:22px}
+}

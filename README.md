@@ -106,3 +106,11 @@ Adicionada a seção de abertura solene com foto, identificação e currículo v
 
 ### V19 — currículos recolhíveis
 Os currículos da Dra.ª Cristiane, do Cel PM RR Marco Antonio dos Santos Morais e do CEL PM Jorge Dirceu Abreu Silva Filho foram convertidos para blocos recolhíveis. A página permanece compacta e o conteúdo completo aparece ao clicar em “Ver currículo”/“Ver currículo completo”.
+
+### V20 — currículo completo do CEL PM Jorge Dirceu Abreu Silva Filho
+Incluídos no currículo recolhível:
+- Formação Acadêmica e Profissional;
+- Formação Complementar;
+- Experiência Profissional;
+- Medalhas.
+O conteúdo foi inserido conforme as informações fornecidas pelo usuário.

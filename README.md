@@ -92,3 +92,7 @@ Consolidação da versão visual mais recente com:
 - acesso ao painel da organização;
 - painel com resumo, filtros e check-in;
 - backend administrativo preparado no arquivo `apps_script_admin.gs`.
+
+### V16 — Área do organizador
+Adicionado atalho discreto "Área do organizador" no cabeçalho (desktop) e no rodapé, direcionando para o painel administrativo protegido pela chave configurada no Apps Script.
+O painel mostra total de participantes, presencial, online, check-ins e pendentes.

@@ -35,3 +35,28 @@ O projeto enviado não informa:
 - plataforma e link definitivo de transmissão online;
 - política de credenciamento específica.
 Por isso, o site não inventa essas informações.
+
+## Atualização V3 — Currículos dos palestrantes
+A seção de palestrantes agora possui um botão "Ver currículo" para cada convidado. Os textos exibidos foram baseados nas informações apresentadas na arte oficial do seminário fornecida na conversa. A página abre e fecha o currículo sem recarregar.
+
+
+### Currículo da Dra.ª Cristiane — texto atualizado pelo usuário
+- Pós-Doutora pela UFRGS.
+- Doutora em Direito do Estado pela USP.
+- Mestre em Direito pela UFRGS.
+- Professora de Direito Constitucional da Faculdade João Paulo II.
+- Procuradora Municipal de Porto Alegre desde 1996.
+- Conselheira de Direitos Humanos do CMDH/POA.
+- Editora-chefe da Revista da ESDM.
+
+
+### Currículo do Cel PM RR Marco Antonio dos Santos Morais — texto informado pelo usuário
+- Doutor em Ciências Militares de Polícia Militar.
+- Bacharel em Ciências Militares e em Direito, com especialização em Gestão Pública.
+- Atuou como Police Adviser da ONU nas Missões de Paz do Haiti e do Sudão do Sul, exercendo funções de comando e coordenação de operações policiais internacionais.
+
+### V6 — logos ajustados
+- Logos da BM, DEC e IPBM ampliados na área principal.
+- Fundos claros removidos das imagens por transparência.
+- Espaçamento e divisórias ajustados para maior presença institucional.
+- Logo do IPBM no cabeçalho também recebeu tratamento sem fundo branco.

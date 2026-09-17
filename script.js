@@ -1,3 +1,14 @@
+document.querySelectorAll('.cv-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const panel = document.getElementById(button.getAttribute('aria-controls'));
+    const opening = panel.hasAttribute('hidden');
+    if (opening) panel.removeAttribute('hidden');
+    else panel.setAttribute('hidden', '');
+    button.setAttribute('aria-expanded', String(opening));
+    button.textContent = opening ? 'Ocultar currículo' : 'Ver currículo';
+  });
+});
+
 
 (function(){
   const form = document.getElementById('registrationForm');

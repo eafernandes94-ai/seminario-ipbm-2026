@@ -71,8 +71,10 @@ O fundo quadriculado incorporado na imagem original do brasão foi removido por 
 ### V9 — fotos e currículos visíveis
 A seção de palestrantes agora exibe a foto de cada palestrante acima do nome, tema e currículo. Os currículos ficam visíveis diretamente na página, sem necessidade de clicar em botão.
 
-### V10 — logos definitivos
-- Brasão da Brigada Militar: máscara circular para retirar o quadriculado da imagem original.
-- DEC e IPBM: fundo branco externo removido por preenchimento conectado, preservando os elementos brancos internos das marcas.
-- Logos principais ampliados e alinhados no topo da página.
-- Removidos os estilos que poderiam adicionar caixas brancas.
+### V11 — logos fornecidos pelo usuário
+Os três logotipos foram extraídos diretamente da nova arte enviada pelo usuário, mantendo as cores e acabamento apresentados nela. O fundo escuro externo foi removido e os arquivos foram aplicados no cabeçalho, rodapé e área principal dos logos.
+
+### V12 — nomenclatura institucional corrigida
+O texto “38 ANOS • SEMINÁRIO NACIONAL” foi substituído por:
+“38º SEMINÁRIO DO INSTITUTO DE PESQUISA DA BRIGADA MILITAR”.
+A tipografia foi ajustada para Inter, em caixa alta, com espaçamento reduzido e quebra natural em telas menores, preservando a hierarquia do título principal.

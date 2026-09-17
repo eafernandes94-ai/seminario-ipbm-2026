@@ -1,6 +1,4 @@
-
-// Depois de publicar o Google Apps Script como Web App,
-// substitua o valor abaixo pela URL que termina em /exec.
+// Endpoint real de inscrições do 38º Seminário IPBM
 window.SEMINARIO_CONFIG = {
-  webAppUrl: ''
+  webAppUrl: 'https://script.google.com/macros/s/AKfycbxVGmG5-HHY8tVClUvfYQPXGQklysNlLihZzXyHCHbQAi0QGMZNPntgnFeO81hsIsYTLw/exec'
 };

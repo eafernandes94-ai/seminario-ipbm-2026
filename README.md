@@ -78,3 +78,6 @@ Os três logotipos foram extraídos diretamente da nova arte enviada pelo usuár
 O texto “38 ANOS • SEMINÁRIO NACIONAL” foi substituído por:
 “38º SEMINÁRIO DO INSTITUTO DE PESQUISA DA BRIGADA MILITAR”.
 A tipografia foi ajustada para Inter, em caixa alta, com espaçamento reduzido e quebra natural em telas menores, preservando a hierarquia do título principal.
+
+### V13 — inscrições conectadas
+O `config.js` desta versão já está configurado com a URL do Web App do Google Apps Script fornecida pelo usuário. Assim, o formulário passa a enviar as inscrições para o backend publicado.

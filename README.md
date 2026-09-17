@@ -81,3 +81,14 @@ A tipografia foi ajustada para Inter, em caixa alta, com espaçamento reduzido e
 
 ### V13 — inscrições conectadas
 O `config.js` desta versão já está configurado com a URL do Web App do Google Apps Script fornecida pelo usuário. Assim, o formulário passa a enviar as inscrições para o backend publicado.
+
+### V15 — versão final consolidada
+Consolidação da versão visual mais recente com:
+- logos refeitos pelo usuário;
+- nomenclatura institucional correta;
+- fotos dos dois palestrantes;
+- currículos visíveis;
+- formulário de inscrições conectado ao Web App já publicado;
+- acesso ao painel da organização;
+- painel com resumo, filtros e check-in;
+- backend administrativo preparado no arquivo `apps_script_admin.gs`.

@@ -82,35 +82,13 @@ A tipografia foi ajustada para Inter, em caixa alta, com espaçamento reduzido e
 ### V13 — inscrições conectadas
 O `config.js` desta versão já está configurado com a URL do Web App do Google Apps Script fornecida pelo usuário. Assim, o formulário passa a enviar as inscrições para o backend publicado.
 
-### V15 — versão final consolidada
-Consolidação da versão visual mais recente com:
-- logos refeitos pelo usuário;
-- nomenclatura institucional correta;
-- fotos dos dois palestrantes;
-- currículos visíveis;
-- formulário de inscrições conectado ao Web App já publicado;
-- acesso ao painel da organização;
-- painel com resumo, filtros e check-in;
-- backend administrativo preparado no arquivo `apps_script_admin.gs`.
+### V21 — versão consolidada retomando a V13
+Base visual e de conteúdo: V13 (sem a inclusão do CEL PM Jorge Dirceu e sem alteração da abertura anterior).
+Adicionado somente:
+- painel administrativo;
+- check-in;
+- atalho discreto "Área do organizador";
+- backend administrativo em `apps_script_admin.gs`;
+- página administrativa em `admin.html`.
 
-### V16 — Área do organizador
-Adicionado atalho discreto "Área do organizador" no cabeçalho (desktop) e no rodapé, direcionando para o painel administrativo protegido pela chave configurada no Apps Script.
-O painel mostra total de participantes, presencial, online, check-ins e pendentes.
-
-### V17 — abertura do evento atualizada
-A programação da abertura solene foi atualizada para:
-**Subcomandante-Geral da Brigada Militar — CEL PM Jorge DIRCEU Abreu Silva Filho.**
-
-### V18 — abertura solene com autoridade
-Adicionada a seção de abertura solene com foto, identificação e currículo visível do CEL PM Jorge Dirceu Abreu Silva Filho, Subcomandante-Geral da Brigada Militar. O conteúdo do currículo foi inserido conforme texto fornecido pelo usuário.
-
-### V19 — currículos recolhíveis
-Os currículos da Dra.ª Cristiane, do Cel PM RR Marco Antonio dos Santos Morais e do CEL PM Jorge Dirceu Abreu Silva Filho foram convertidos para blocos recolhíveis. A página permanece compacta e o conteúdo completo aparece ao clicar em “Ver currículo”/“Ver currículo completo”.
-
-### V20 — currículo completo do CEL PM Jorge Dirceu Abreu Silva Filho
-Incluídos no currículo recolhível:
-- Formação Acadêmica e Profissional;
-- Formação Complementar;
-- Experiência Profissional;
-- Medalhas.
-O conteúdo foi inserido conforme as informações fornecidas pelo usuário.
+Os currículos dos dois palestrantes permanecem na seção de palestrantes e as inscrições reais continuam apontando para o Web App já publicado.

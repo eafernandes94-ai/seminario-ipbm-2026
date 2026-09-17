@@ -1,18 +1,3 @@
-
-document.querySelectorAll('.cv-header').forEach((button) => {
-  button.addEventListener('click', () => {
-    const targetId = button.getAttribute('aria-controls');
-    const target = document.getElementById(targetId);
-    const opening = target.hasAttribute('hidden');
-    target.toggleAttribute('hidden', !opening);
-    button.setAttribute('aria-expanded', String(opening));
-    const label = button.querySelector('span:first-child');
-    const plus = button.querySelector('.cv-plus');
-    if (label) label.textContent = opening ? 'Ocultar currículo' : 'Ver currículo completo';
-    if (plus) plus.textContent = opening ? '−' : '+';
-  });
-});
-
 document.querySelectorAll('.cv-toggle').forEach((button) => {
   button.addEventListener('click', () => {
     const panel = document.getElementById(button.getAttribute('aria-controls'));

@@ -120,3 +120,6 @@ fieldset{border:0;padding:0;margin:10px 0 17px}legend{font-size:11px;font-weight
     max-width:100%;
   }
 }
+
+.footer-admin{display:block;color:var(--gold2);font-size:9px;letter-spacing:.05em;margin-bottom:6px;text-decoration:underline;text-underline-offset:3px}
+.footer-admin:hover{opacity:.85}

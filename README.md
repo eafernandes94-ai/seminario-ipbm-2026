@@ -60,3 +60,6 @@ A seção de palestrantes agora possui um botão "Ver currículo" para cada conv
 - Fundos claros removidos das imagens por transparência.
 - Espaçamento e divisórias ajustados para maior presença institucional.
 - Logo do IPBM no cabeçalho também recebeu tratamento sem fundo branco.
+
+### V7 — logos sem caixa
+As imagens foram recortadas ao conteúdo visível após a remoção do fundo, reduzindo o canvas transparente ao mínimo e eliminando a aparência de quadrado branco.

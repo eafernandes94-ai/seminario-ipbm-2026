@@ -92,3 +92,9 @@ Adicionado somente:
 - página administrativa em `admin.html`.
 
 Os currículos dos dois palestrantes permanecem na seção de palestrantes e as inscrições reais continuam apontando para o Web App já publicado.
+
+### V22 — fundos com efeito de marca d'água
+O layout ganhou imagens institucionais em baixa opacidade como elementos de fundo, usando a arte oficial do seminário e os logotipos já fornecidos, sem poluir a leitura. Os elementos aparecem de forma diferente nas seções para criar profundidade e unidade visual.
+
+### V23 — seção visual de câmeras corporais
+Foi adicionada uma faixa temática usando a imagem fornecida pelo usuário como fotografia de fundo, com sobreposição azul-marinho para manter legibilidade e identidade visual. A seção destaca o Eixo II — Tecnologia Aplicada à Segurança Pública: Câmeras Corporais.

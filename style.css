@@ -128,170 +128,63 @@ fieldset{border:0;padding:0;margin:10px 0 17px}legend{font-size:11px;font-weight
 .footer-admin:hover{opacity:.86}
 @media(max-width:940px){.nav-admin{display:none}}
 
-/* V22 — imagens em marca d'água para enriquecer o visual */
-.section{
-  position:relative;
-  overflow:hidden;
-}
-.section > .container{
-  position:relative;
-  z-index:2;
-}
-
-/* Sobre o evento: arte do seminário em marca d'água */
-#evento::after{
-  content:"";
-  position:absolute;
-  width:500px;
-  height:500px;
-  right:-120px;
-  top:50%;
-  transform:translateY(-50%) rotate(7deg);
-  background:url("assets/card-seminario.png") center/contain no-repeat;
-  opacity:.045;
-  filter:grayscale(100%);
-  pointer-events:none;
-}
-
-/* Eixos: IPBM como selo discreto ao fundo */
-.section.muted::after{
-  content:"";
-  position:absolute;
-  width:430px;
-  height:430px;
-  left:-120px;
-  bottom:-170px;
-  background:url("assets/logo-ipbm-user.png") center/contain no-repeat;
-  opacity:.035;
-  pointer-events:none;
-}
-
-/* Palestrantes: composição tecnológica muito suave */
-#palestrantes::after{
-  content:"";
-  position:absolute;
-  width:580px;
-  height:580px;
-  right:-210px;
-  top:30px;
-  background:url("assets/card-seminario.png") center/contain no-repeat;
-  opacity:.03;
-  filter:grayscale(100%);
-  transform:rotate(-8deg);
-  pointer-events:none;
-}
-
-/* Programação: brasão em marca d'água */
-#programacao::after{
-  content:"";
-  position:absolute;
-  width:520px;
-  height:520px;
-  right:-140px;
-  top:50%;
-  transform:translateY(-50%);
-  background:url("assets/logo-bm-user.png") center/contain no-repeat;
-  opacity:.028;
-  filter:grayscale(100%);
-  pointer-events:none;
-}
-
-/* Público: IPBM central muito discreto */
-.audience::after{
-  content:"";
-  position:absolute;
-  width:470px;
-  height:470px;
-  right:-130px;
-  bottom:-190px;
-  background:url("assets/logo-ipbm-user.png") center/contain no-repeat;
-  opacity:.035;
-  pointer-events:none;
-}
-
-/* Inscrição: selo em baixa opacidade */
-.register::after{
-  content:"";
-  position:absolute;
-  width:420px;
-  height:420px;
-  left:-150px;
-  top:50%;
-  transform:translateY(-50%);
-  background:url("assets/logo-ipbm-user.png") center/contain no-repeat;
-  opacity:.025;
-  pointer-events:none;
-}
-
-/* Leve textura nos cards para não parecerem "chapados" */
-.topic, .speaker, .form-card, .authority-photo-wrap{
-  position:relative;
-}
-.topic::after, .speaker::after, .form-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  background:linear-gradient(125deg,rgba(210,173,81,.05),transparent 33%,transparent 68%,rgba(8,28,49,.025));
-  opacity:.55;
-}
-
-/* Mobile: reduzir as marcas d'água para não competir com o conteúdo */
-@media(max-width:620px){
-  #evento::after,#palestrantes::after,#programacao::after,.audience::after,.register::after,.section.muted::after{
-    width:290px;
-    height:290px;
-    opacity:.022;
-  }
-}
-
-/* V25 — foto das câmeras corporais como marca d'água nos Eixos Temáticos */
+/* V26 — apenas os Eixos Temáticos recebem a foto das câmeras como fundo */
 .section.muted{
   position:relative;
   overflow:hidden;
+  background:#092238;
+  color:#fff;
+  isolation:isolate;
 }
 .section.muted::before{
   content:"";
   position:absolute;
   inset:0;
-  background-image:
-    linear-gradient(rgba(244,246,248,.91),rgba(244,246,248,.91)),
+  background:
+    linear-gradient(90deg, rgba(5,22,39,.90) 0%, rgba(5,22,39,.76) 42%, rgba(5,22,39,.68) 100%),
+    linear-gradient(0deg, rgba(5,22,39,.76), rgba(5,22,39,.60)),
     url("assets/cameras-corporais.webp");
   background-size:cover;
   background-position:center 52%;
   background-repeat:no-repeat;
-  opacity:.72;
-  filter:saturate(.55) contrast(.96);
-  pointer-events:none;
-  z-index:0;
-}
-.section.muted::after{
-  content:"";
-  position:absolute;
-  width:430px;
-  height:430px;
-  left:-120px;
-  bottom:-170px;
-  background:url("assets/logo-ipbm-user.png") center/contain no-repeat;
-  opacity:.025;
-  pointer-events:none;
+  filter:saturate(.72) contrast(1.02);
   z-index:0;
 }
 .section.muted > .container{
   position:relative;
   z-index:2;
 }
-.topic{
-  position:relative;
-  z-index:2;
-  background:rgba(255,255,255,.94);
-  backdrop-filter:blur(2px);
+.section.muted .kicker{
+  color:var(--gold2);
 }
+.section.muted .topic{
+  background:rgba(255,255,255,.965);
+  color:var(--ink);
+  border-color:rgba(255,255,255,.35);
+  box-shadow:0 14px 36px rgba(0,0,0,.16);
+}
+.section.muted .topic p{
+  color:var(--muted);
+}
+.section.muted .topic span{
+  color:#9a7722;
+}
+
+/* Sem marcas d'água nas demais seções */
+#evento::after,
+#palestrantes::after,
+#programacao::after,
+.audience::after,
+.register::after{
+  display:none !important;
+}
+
 @media(max-width:620px){
   .section.muted::before{
-    background-image:
-      linear-gradient(rgba(244,246,248,.94),rgba(244,246,248,.94)),
+    background:
+      linear-gradient(180deg, rgba(5,22,39,.82) 0%, rgba(5,22,39,.86) 100%),
       url("assets/cameras-corporais.webp");
-    opacity:.58;
+    background-size:cover;
+    background-position:center;
   }
 }

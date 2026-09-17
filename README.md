@@ -104,3 +104,6 @@ A seção exclusiva sobre câmeras corporais foi removida para evitar repetiçã
 
 ### V25 — foto das câmeras como marca d'água dos Eixos Temáticos
 A imagem fornecida pelo usuário foi aplicada como fundo suave da seção “Eixos Temáticos”, sem criar uma seção adicional. A foto fica atrás dos dois cards, com baixa intensidade e camada clara para preservar a leitura.
+
+### V26 — fundo fotográfico apenas nos Eixos Temáticos
+Removidos os fundos/marcas d'água das demais seções. A fotografia das câmeras corporais agora é usada exclusivamente como fundo da seção “Eixos Temáticos”, com tratamento azul-marinho e sobreposição escura para manter os cards e textos legíveis.

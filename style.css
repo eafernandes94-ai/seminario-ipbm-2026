@@ -147,3 +147,58 @@ fieldset{border:0;padding:0;margin:10px 0 17px}legend{font-size:11px;font-weight
 @media(max-width:940px){
   .nav-admin{display:none}
 }
+
+/* V18 — autoridade da abertura */
+.opening-authority{background:#f7f9fb}
+.authority-grid{display:grid;grid-template-columns:360px 1fr;gap:48px;align-items:start}
+.authority-photo-wrap{background:#fff;border:1px solid var(--line);box-shadow:0 10px 28px rgba(11,25,43,.07);position:sticky;top:100px}
+.authority-photo{display:block;width:100%;height:460px;object-fit:cover;object-position:center 20%}
+.authority-caption{padding:18px 20px;border-top:3px solid var(--gold)}
+.authority-caption strong,.authority-caption span{display:block}
+.authority-caption strong{font:600 21px/1.2 "Source Serif 4",Georgia,serif}
+.authority-caption span{font-size:11px;color:var(--muted);margin-top:5px}
+.authority-copy h2{margin-bottom:7px}
+.authority-name{font-size:15px;font-weight:800;color:#6e571b;margin-bottom:26px}
+.cv-block{background:#fff;border:1px solid var(--line);padding:22px 24px;margin-top:16px}
+.cv-block h3{font-size:13px;text-transform:uppercase;letter-spacing:.10em;color:var(--ink);margin:0 0 13px}
+.cv-block ul{margin:0;padding-left:18px;color:var(--muted);font-size:12px}
+.cv-block li{margin:0 0 8px}
+@media(max-width:940px){
+  .authority-grid{grid-template-columns:1fr}
+  .authority-photo-wrap{position:static;max-width:520px;margin:0 auto}
+}
+@media(max-width:620px){
+  .authority-photo{height:360px}
+  .cv-block{padding:18px}
+  .cv-block ul{font-size:11px}
+}
+
+/* V19 — currículos recolhíveis */
+.cv-header{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  border:1px solid var(--gold);
+  background:transparent;
+  color:#6d571e;
+  padding:11px 14px;
+  margin-top:16px;
+  font:800 10px Inter,system-ui,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.cv-header:hover{background:#fbf5e6}
+.cv-plus{font-size:17px;line-height:1;font-weight:500}
+.cv-panel.visible{display:block;border-top:0;padding-top:12px;margin-top:0}
+.cv-panel.visible[hidden]{display:none}
+.authority-collapsible{padding:0;background:transparent;border:0;box-shadow:none}
+.authority-collapsible .cv-header{margin-top:20px}
+.cv-content{margin-top:14px}
+.cv-content[hidden]{display:none}
+.cv-subblock{background:#fff;border:1px solid var(--line);padding:19px 22px;margin-top:12px}
+.cv-subblock h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 12px}
+.cv-subblock ul{margin:0;padding-left:18px;color:var(--muted);font-size:12px}
+.cv-subblock li{margin-bottom:7px}

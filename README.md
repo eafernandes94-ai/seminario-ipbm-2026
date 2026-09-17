@@ -96,3 +96,13 @@ Consolidação da versão visual mais recente com:
 ### V16 — Área do organizador
 Adicionado atalho discreto "Área do organizador" no cabeçalho (desktop) e no rodapé, direcionando para o painel administrativo protegido pela chave configurada no Apps Script.
 O painel mostra total de participantes, presencial, online, check-ins e pendentes.
+
+### V17 — abertura do evento atualizada
+A programação da abertura solene foi atualizada para:
+**Subcomandante-Geral da Brigada Militar — CEL PM Jorge DIRCEU Abreu Silva Filho.**
+
+### V18 — abertura solene com autoridade
+Adicionada a seção de abertura solene com foto, identificação e currículo visível do CEL PM Jorge Dirceu Abreu Silva Filho, Subcomandante-Geral da Brigada Militar. O conteúdo do currículo foi inserido conforme texto fornecido pelo usuário.
+
+### V19 — currículos recolhíveis
+Os currículos da Dra.ª Cristiane, do Cel PM RR Marco Antonio dos Santos Morais e do CEL PM Jorge Dirceu Abreu Silva Filho foram convertidos para blocos recolhíveis. A página permanece compacta e o conteúdo completo aparece ao clicar em “Ver currículo”/“Ver currículo completo”.

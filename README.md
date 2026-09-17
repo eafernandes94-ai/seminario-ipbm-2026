@@ -98,3 +98,9 @@ O layout ganhou imagens institucionais em baixa opacidade como elementos de fund
 
 ### V23 — seção visual de câmeras corporais
 Foi adicionada uma faixa temática usando a imagem fornecida pelo usuário como fotografia de fundo, com sobreposição azul-marinho para manter legibilidade e identidade visual. A seção destaca o Eixo II — Tecnologia Aplicada à Segurança Pública: Câmeras Corporais.
+
+### V24 — sem seção extra de câmeras
+A seção exclusiva sobre câmeras corporais foi removida para evitar repetição visual e de conteúdo. O tema permanece representado no bloco “Eixos Temáticos”, com os dois cards já existentes. A imagem `assets/cameras-corporais.webp` permanece no pacote para possível uso futuro.
+
+### V25 — foto das câmeras como marca d'água dos Eixos Temáticos
+A imagem fornecida pelo usuário foi aplicada como fundo suave da seção “Eixos Temáticos”, sem criar uma seção adicional. A foto fica atrás dos dois cards, com baixa intensidade e camada clara para preservar a leitura.

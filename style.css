@@ -245,75 +245,53 @@ fieldset{border:0;padding:0;margin:10px 0 17px}legend{font-size:11px;font-weight
   }
 }
 
-/* V23 — seção visual sobre câmeras corporais */
-.technology-feature{
+/* V25 — foto das câmeras corporais como marca d'água nos Eixos Temáticos */
+.section.muted{
   position:relative;
-  min-height:440px;
   overflow:hidden;
-  color:#fff;
-  isolation:isolate;
 }
-.technology-image{
+.section.muted::before{
+  content:"";
   position:absolute;
   inset:0;
-  background-image:url("assets/cameras-corporais.webp");
+  background-image:
+    linear-gradient(rgba(244,246,248,.91),rgba(244,246,248,.91)),
+    url("assets/cameras-corporais.webp");
   background-size:cover;
-  background-position:center 54%;
-  transform:scale(1.03);
-  filter:saturate(.88) contrast(1.03);
+  background-position:center 52%;
+  background-repeat:no-repeat;
+  opacity:.72;
+  filter:saturate(.55) contrast(.96);
+  pointer-events:none;
+  z-index:0;
 }
-.technology-overlay{
+.section.muted::after{
+  content:"";
   position:absolute;
-  inset:0;
-  background:
-    linear-gradient(90deg, rgba(4,19,34,.94) 0%, rgba(4,19,34,.82) 38%, rgba(4,19,34,.48) 66%, rgba(4,19,34,.28) 100%),
-    linear-gradient(0deg, rgba(4,19,34,.42), rgba(4,19,34,.10));
-  z-index:1;
+  width:430px;
+  height:430px;
+  left:-120px;
+  bottom:-170px;
+  background:url("assets/logo-ipbm-user.png") center/contain no-repeat;
+  opacity:.025;
+  pointer-events:none;
+  z-index:0;
 }
-.technology-content{
+.section.muted > .container{
   position:relative;
   z-index:2;
-  min-height:440px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
 }
-.technology-content>div:first-child{max-width:660px}
-.technology-content h2{
-  font:600 clamp(38px,4.5vw,58px)/1.06 "Source Serif 4",Georgia,serif;
-  margin:0 0 15px;
-}
-.technology-content p:not(.kicker){
-  margin:0;
-  max-width:640px;
-  color:#eef2f6;
-  font-size:16px;
-}
-.technology-tag{
-  align-self:flex-end;
-  margin-bottom:42px;
-  border:1px solid rgba(241,210,125,.72);
-  color:var(--gold2);
-  padding:11px 14px;
-  font-size:10px;
-  font-weight:800;
-  letter-spacing:.12em;
-  white-space:nowrap;
-}
-@media(max-width:940px){
-  .technology-feature,.technology-content{min-height:390px}
-  .technology-content{align-items:flex-end;padding-bottom:42px}
-  .technology-tag{margin:0}
+.topic{
+  position:relative;
+  z-index:2;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(2px);
 }
 @media(max-width:620px){
-  .technology-feature,.technology-content{min-height:430px}
-  .technology-image{background-position:center}
-  .technology-overlay{
-    background:linear-gradient(180deg, rgba(4,19,34,.76) 0%, rgba(4,19,34,.83) 68%, rgba(4,19,34,.92) 100%);
+  .section.muted::before{
+    background-image:
+      linear-gradient(rgba(244,246,248,.94),rgba(244,246,248,.94)),
+      url("assets/cameras-corporais.webp");
+    opacity:.58;
   }
-  .technology-content{display:block;padding-top:70px}
-  .technology-tag{display:inline-block;margin-top:24px}
-  .technology-content h2{font-size:42px}
-  .technology-content p:not(.kicker){font-size:14px}
 }

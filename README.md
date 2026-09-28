@@ -146,3 +146,9 @@ O site público foi atualizado para usar a nova URL do Web App fornecida pelo us
 - Revogar a participação bloqueia automaticamente o certificado e remove o PDF previamente gerado.
 - O botão público “Acessar certificados” usa navegação na mesma aba.
 - Ao substituir `apps_script_certificados.gs`, mantenha sua chave administrativa atual em `CONFIG.ADMIN_KEY`.
+
+### V35 — nova implantação do Apps Script
+- Atualizada a URL do Web App para a nova implantação fornecida pela organização.
+- O acesso público aos certificados aponta para `?cert=1` na nova implantação.
+- O link “Certificado” do menu principal também abre diretamente a página de certificados na mesma aba.
+- O botão “Acessar certificados” permanece sem `target="_blank"`, mantendo a abertura na mesma aba.

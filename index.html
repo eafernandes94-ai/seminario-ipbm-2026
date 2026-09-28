@@ -210,19 +210,39 @@
           <label>Instituição / Unidade<input name="instituicao" maxlength="160"></label>
           <label>Telefone<input name="telefone" maxlength="30" autocomplete="tel"></label>
         </div>
-        <label>Perfil
-          <select name="perfil" required>
+        <label>Instituição / Força
+          <select name="perfil" id="forca" required>
             <option value="">Selecione</option>
-            <option>Brigada Militar</option>
-            <option>Polícia Militar de outro Estado</option>
-            <option>Corpo de Bombeiros Militar</option>
-            <option>Instituição de Ensino Superior</option>
-            <option>Órgão público</option>
-            <option>Aluno / pós-graduação</option>
-            <option>Pesquisador convidado</option>
-            <option>Outro</option>
+            <option value="Brigada Militar – RS">Brigada Militar – RS</option>
+            <option value="Polícia Militar – outro Estado">Polícia Militar – outro Estado</option>
+            <option value="Corpo de Bombeiros Militar – RS">Corpo de Bombeiros Militar – RS</option>
+            <option value="Corpo de Bombeiros Militar – outro Estado">Corpo de Bombeiros Militar – outro Estado</option>
+            <option value="Exército Brasileiro">Exército Brasileiro</option>
+            <option value="Marinha do Brasil">Marinha do Brasil</option>
+            <option value="Força Aérea Brasileira">Força Aérea Brasileira</option>
+            <option value="Servidor público / civil">Servidor público / civil</option>
+            <option value="Público externo / outros">Público externo / outros</option>
           </select>
         </label>
+        <div class="row" id="corpDataRow" hidden>
+          <label>UF da corporação
+            <select name="ufCorporacao" id="ufCorporacao">
+              <option value="">Selecione</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option>
+              <option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option>
+              <option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option>
+              <option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+              <option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option>
+              <option>SE</option><option>TO</option>
+            </select>
+          </label>
+          <label>Posto / Graduação
+            <select name="postoGraduacao" id="postoGraduacao">
+              <option value="">Selecione</option>
+            </select>
+          </label>
+        </div>
+        <p class="fine" id="corpHint" hidden>O posto/graduação será convertido automaticamente para a abreviatura padronizada utilizada no certificado.</p>
         <fieldset>
           <legend>Modalidade de participação</legend>
           <div class="choices">

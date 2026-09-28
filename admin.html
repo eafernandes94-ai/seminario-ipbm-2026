@@ -48,7 +48,7 @@ table{width:100%;border-collapse:collapse;margin-top:14px;font-size:11px}th,td{p
     <div id="mainMsg" class="message"></div>
     <div class="table-wrap"><table>
       <thead><tr>
-        <th>Protocolo</th><th>Participante</th><th>E-mail</th><th>Instituição</th><th>Modalidade</th><th>Data</th>
+        <th>Protocolo</th><th>Participante</th><th>E-mail</th><th>Instituição / Unidade</th><th>Força / Instituição</th><th>UF</th><th>Posto / Graduação</th><th>Modalidade</th><th>Data</th>
         <th>Check-in</th><th>Participação</th><th>Certificado</th><th>Ações</th>
       </tr></thead>
       <tbody id="rows"></tbody>
@@ -94,7 +94,7 @@ function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&l
 function render(){
   const q=(document.getElementById('q').value||'').toLowerCase(),mode=document.getElementById('mode').value,status=document.getElementById('status').value,part=document.getElementById('participation').value;
   const filtered=records.filter(r=>{
-    const hay=[r.protocol,r.nome,r.email,r.instituicao,r.telefone].join(' ').toLowerCase();
+    const hay=[r.protocol,r.nome,r.email,r.instituicao,r.telefone,r.perfil,r.ufCorporacao,r.postoGraduacao].join(' ').toLowerCase();
     const p=r.participacao==='Confirmado',c=r.checkin==='Confirmado';
     return (!q||hay.includes(q))&&(!mode||r.modalidade===mode)&&(!status||(status==='confirmado'?c:!c))&&(!part||(part==='confirmado'?p:!p))
   });
@@ -109,6 +109,7 @@ function render(){
     return '<tr>'+
       '<td><b>'+esc(r.protocol)+'</b></td>'+
       '<td>'+esc(r.nome)+'</td><td>'+esc(r.email)+'</td><td>'+esc(r.instituicao)+'</td>'+
+      '<td>'+esc(r.perfil)+'</td><td>'+esc(r.ufCorporacao)+'</td><td>'+esc(r.postoGraduacao)+'</td>'+
       '<td><span class="badge '+c+'">'+esc(r.modalidade)+'</span></td>'+
       '<td>'+esc(r.dataHora)+'</td>'+
       '<td><span class="badge '+(chk?'checked':'pending')+'">'+(chk?'Confirmado':'Pendente')+'</span></td>'+
@@ -119,7 +120,7 @@ function render(){
         '<button class="action secondary" onclick="participation(\''+safe+'\','+(par?'false':'true')+')">'+(par?'Revogar participação':'Confirmar participação')+'</button>'+
         '<button class="action cert" '+(!par?'disabled':'')+' onclick="certificateAuth(\''+safe+'\','+(auth?'false':'true')+')">'+(auth?'Bloquear certificado':'Liberar certificado')+'</button>'+
       '</td></tr>'
-  }).join('')||'<tr><td colspan="10" class="small">Nenhuma inscrição encontrada.</td></tr>'
+  }).join('')||'<tr><td colspan="13" class="small">Nenhuma inscrição encontrada.</td></tr>'
 }
 function checkin(protocol){
   if(!confirm('Confirmar check-in para '+protocol+'?'))return;

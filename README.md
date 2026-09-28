@@ -128,3 +128,6 @@ Este pacote contém apenas os arquivos necessários para o site público:
 
 O botão “Certificado” já aponta para o Web App publicado com `?cert=1`.
 O atalho “Área do organizador” aponta para `?admin=1`.
+
+### V29 — certificado integrado ao site
+O botão “Acessar certificados” agora abre a página de certificados dentro de uma janela/modal do próprio site, mantendo o participante na página do seminário. Também existe um link secundário para abrir o certificado em nova aba.

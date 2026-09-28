@@ -107,3 +107,17 @@ A imagem fornecida pelo usuário foi aplicada como fundo suave da seção “Eix
 
 ### V26 — fundo fotográfico apenas nos Eixos Temáticos
 Removidos os fundos/marcas d'água das demais seções. A fotografia das câmeras corporais agora é usada exclusivamente como fundo da seção “Eixos Temáticos”, com tratamento azul-marinho e sobreposição escura para manter os cards e textos legíveis.
+
+
+### V27 — Certificados de participação
+Fluxo: inscrição → check-in/participação → confirmação do administrador → certificado liberado.
+
+Arquivos adicionais:
+- `certificate.html`: página pública de consulta e emissão.
+- `apps_script_certificados.gs`: backend com participação e geração de PDF.
+
+IMPORTANTE: o Apps Script precisa ter três arquivos: `Código.gs` (usar o conteúdo de `apps_script_certificados.gs`), `admin.html` e `certificate.html`.
+
+Na planilha, as novas colunas serão criadas automaticamente: `Participação`, `Data/Hora Participação` e `Certificado PDF ID`.
+
+O certificado é criado em PDF dentro de uma pasta privada no Google Drive e entregue ao participante pelo navegador; a inscrição por si só não libera o certificado.

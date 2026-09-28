@@ -244,7 +244,7 @@
         <h2>Seu certificado será liberado após a confirmação da participação.</h2>
         <p>Depois do evento, utilize seu protocolo e o e-mail informado na inscrição para consultar a liberação e gerar o certificado em PDF.</p>
       </div>
-      <button class="btn primary certificate-open" type="button" data-cert-url="https://script.google.com/macros/s/AKfycbxVGmG5-HHY8tVClUvfYQPXGQklysNlLihZzXyHCHbQAi0QGMZNPntgnFeO81hsIsYTLw/exec?cert=1&embedded=1">Acessar certificados</button>
+      <a class="btn primary" href="https://script.google.com/macros/s/AKfycbxVGmG5-HHY8tVClUvfYQPXGQklysNlLihZzXyHCHbQAi0QGMZNPntgnFeO81hsIsYTLw/exec?cert=1" target="_blank" rel="noopener">Acessar certificados</a>
     </div>
   </section>
 
@@ -258,25 +258,6 @@
     </div>
   </section>
 
-  <div id="certificateModal" class="certificate-modal" aria-hidden="true">
-    <div class="certificate-backdrop" data-close-cert></div>
-    <div class="certificate-dialog" role="dialog" aria-modal="true" aria-labelledby="certificateDialogTitle">
-      <div class="certificate-dialog-head">
-        <div>
-          <p class="kicker">CERTIFICADO DE PARTICIPAÇÃO</p>
-          <h2 id="certificateDialogTitle">Consulte e gere seu certificado</h2>
-        </div>
-        <button type="button" class="certificate-close" data-close-cert aria-label="Fechar">×</button>
-      </div>
-      <div class="certificate-frame-wrap">
-        <iframe id="certificateFrame" title="Consulta e emissão de certificado" loading="lazy"></iframe>
-      </div>
-      <div class="certificate-dialog-foot">
-        <span>O certificado somente será liberado após a confirmação da participação pela organização.</span>
-        <a id="certificateExternal" href="#" target="_blank" rel="noopener">Abrir em nova aba</a>
-      </div>
-    </div>
-  </div>
 </main>
 
 <footer class="footer">

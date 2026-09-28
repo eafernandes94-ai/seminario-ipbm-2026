@@ -131,3 +131,6 @@ O atalho “Área do organizador” aponta para `?admin=1`.
 
 ### V29 — certificado integrado ao site
 O botão “Acessar certificados” agora abre a página de certificados dentro de uma janela/modal do próprio site, mantendo o participante na página do seminário. Também existe um link secundário para abrir o certificado em nova aba.
+
+### V30 — acesso direto ao certificado
+O botão “Acessar certificados” deixou de carregar o Web App dentro de um iframe/modal. Ele abre diretamente a página de certificados do Google Apps Script em uma nova aba. Isso evita problemas de autenticação/conteúdo de terceiros observados no iframe, enquanto preserva a página pública do seminário.

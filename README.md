@@ -137,3 +137,6 @@ O botão “Acessar certificados” deixou de carregar o Web App dentro de um if
 
 ### V31 — nova implantação do Google Apps Script
 O site público foi atualizado para usar a nova URL do Web App fornecida pelo usuário. Com isso, inscrição, certificado e Área do organizador passam a apontar para a mesma implantação atualizada.
+
+### V32 — certificado na mesma aba
+O botão “Acessar certificados” abre a consulta em uma janela sobreposta dentro do próprio site. O conteúdo é carregado diretamente da implantação pública atual do Apps Script, que já foi validada como funcional.

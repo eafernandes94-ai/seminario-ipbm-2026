@@ -1,4 +1,30 @@
 
+(function(){
+  const modal = document.getElementById('certificateModal');
+  const frame = document.getElementById('certificateFrame');
+  const openButton = document.querySelector('.certificate-open');
+  const certUrl = 'https://script.google.com/macros/s/AKfycbwH_9PQK6OtZUQtozM8WDAusJJ69V8j8ylQwUlTJ6mZYOd3l6tJv0O1dx_eAXXxqiXvFg/exec?cert=1';
+
+  function openCertificate(){
+    frame.src = certUrl;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('modal-open');
+  }
+  function closeCertificate(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    frame.src = 'about:blank';
+    document.body.classList.remove('modal-open');
+  }
+  if(openButton) openButton.addEventListener('click', openCertificate);
+  document.querySelectorAll('[data-close-cert]').forEach((el)=>el.addEventListener('click', closeCertificate));
+  document.addEventListener('keydown',(e)=>{
+    if(e.key==='Escape' && modal.classList.contains('open')) closeCertificate();
+  });
+})();
+
+
 ;
 document.querySelectorAll('.cv-toggle').forEach((button) => {
   button.addEventListener('click', () => {

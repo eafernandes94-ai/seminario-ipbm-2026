@@ -1,0 +1,154 @@
+
+# 38º Seminário IPBM — Site funcional V2
+
+Esta versão usa diretamente as artes fornecidas no chat:
+- logo oficial da Brigada Militar;
+- logo do Departamento de Educação e Cultura;
+- logo do IPBM;
+- Card oficial do seminário.
+
+## Conteúdo
+Os textos do evento foram baseados no projeto fornecido:
+- 38º Seminário do Instituto de Pesquisa da Brigada Militar;
+- 27 de outubro de 2026;
+- Federação Gaúcha de Futebol — Porto Alegre/RS;
+- tema: Pesquisa, Tecnologia e Inovação na Segurança Pública: Inteligência Artificial e Câmeras Corporais;
+- programação preliminar e palestrantes constantes do documento.
+
+## Inscrição
+Sem backend configurado, a página entra em modo demonstração e salva os dados no navegador.
+
+Para inscrições reais:
+1. Abra uma planilha Google Sheets.
+2. Extensões > Apps Script.
+3. Cole o conteúdo de `apps_script.gs`.
+4. Implante como Web App.
+5. Copie a URL `/exec`.
+6. Coloque-a em `config.js` em `webAppUrl`.
+
+Depois, publique esta pasta em uma hospedagem estática (GitHub Pages, Netlify, Cloudflare Pages, Vercel ou servidor institucional).
+
+## O que ainda precisa ser definido pela organização
+O projeto enviado não informa:
+- número/limite de vagas;
+- regras de certificado;
+- plataforma e link definitivo de transmissão online;
+- política de credenciamento específica.
+Por isso, o site não inventa essas informações.
+
+## Atualização V3 — Currículos dos palestrantes
+A seção de palestrantes agora possui um botão "Ver currículo" para cada convidado. Os textos exibidos foram baseados nas informações apresentadas na arte oficial do seminário fornecida na conversa. A página abre e fecha o currículo sem recarregar.
+
+
+### Currículo da Dra.ª Cristiane — texto atualizado pelo usuário
+- Pós-Doutora pela UFRGS.
+- Doutora em Direito do Estado pela USP.
+- Mestre em Direito pela UFRGS.
+- Professora de Direito Constitucional da Faculdade João Paulo II.
+- Procuradora Municipal de Porto Alegre desde 1996.
+- Conselheira de Direitos Humanos do CMDH/POA.
+- Editora-chefe da Revista da ESDM.
+
+
+### Currículo do Cel PM RR Marco Antonio dos Santos Morais — texto informado pelo usuário
+- Doutor em Ciências Militares de Polícia Militar.
+- Bacharel em Ciências Militares e em Direito, com especialização em Gestão Pública.
+- Atuou como Police Adviser da ONU nas Missões de Paz do Haiti e do Sudão do Sul, exercendo funções de comando e coordenação de operações policiais internacionais.
+
+### V6 — logos ajustados
+- Logos da BM, DEC e IPBM ampliados na área principal.
+- Fundos claros removidos das imagens por transparência.
+- Espaçamento e divisórias ajustados para maior presença institucional.
+- Logo do IPBM no cabeçalho também recebeu tratamento sem fundo branco.
+
+### V7 — logos sem caixa
+As imagens foram recortadas ao conteúdo visível após a remoção do fundo, reduzindo o canvas transparente ao mínimo e eliminando a aparência de quadrado branco.
+
+### V8 — correção definitiva do logo BM
+O fundo quadriculado incorporado na imagem original do brasão foi removido por recorte circular com borda suavizada. O logo passa a ter somente a área do brasão, com transparência real no exterior.
+
+
+### V9 — fotos e currículos visíveis
+A seção de palestrantes agora exibe a foto de cada palestrante acima do nome, tema e currículo. Os currículos ficam visíveis diretamente na página, sem necessidade de clicar em botão.
+
+### V11 — logos fornecidos pelo usuário
+Os três logotipos foram extraídos diretamente da nova arte enviada pelo usuário, mantendo as cores e acabamento apresentados nela. O fundo escuro externo foi removido e os arquivos foram aplicados no cabeçalho, rodapé e área principal dos logos.
+
+### V12 — nomenclatura institucional corrigida
+O texto “38 ANOS • SEMINÁRIO NACIONAL” foi substituído por:
+“38º SEMINÁRIO DO INSTITUTO DE PESQUISA DA BRIGADA MILITAR”.
+A tipografia foi ajustada para Inter, em caixa alta, com espaçamento reduzido e quebra natural em telas menores, preservando a hierarquia do título principal.
+
+### V13 — inscrições conectadas
+O `config.js` desta versão já está configurado com a URL do Web App do Google Apps Script fornecida pelo usuário. Assim, o formulário passa a enviar as inscrições para o backend publicado.
+
+### V21 — versão consolidada retomando a V13
+Base visual e de conteúdo: V13 (sem a inclusão do CEL PM Jorge Dirceu e sem alteração da abertura anterior).
+Adicionado somente:
+- painel administrativo;
+- check-in;
+- atalho discreto "Área do organizador";
+- backend administrativo em `apps_script_admin.gs`;
+- página administrativa em `admin.html`.
+
+Os currículos dos dois palestrantes permanecem na seção de palestrantes e as inscrições reais continuam apontando para o Web App já publicado.
+
+### V22 — fundos com efeito de marca d'água
+O layout ganhou imagens institucionais em baixa opacidade como elementos de fundo, usando a arte oficial do seminário e os logotipos já fornecidos, sem poluir a leitura. Os elementos aparecem de forma diferente nas seções para criar profundidade e unidade visual.
+
+### V23 — seção visual de câmeras corporais
+Foi adicionada uma faixa temática usando a imagem fornecida pelo usuário como fotografia de fundo, com sobreposição azul-marinho para manter legibilidade e identidade visual. A seção destaca o Eixo II — Tecnologia Aplicada à Segurança Pública: Câmeras Corporais.
+
+### V24 — sem seção extra de câmeras
+A seção exclusiva sobre câmeras corporais foi removida para evitar repetição visual e de conteúdo. O tema permanece representado no bloco “Eixos Temáticos”, com os dois cards já existentes. A imagem `assets/cameras-corporais.webp` permanece no pacote para possível uso futuro.
+
+### V25 — foto das câmeras como marca d'água dos Eixos Temáticos
+A imagem fornecida pelo usuário foi aplicada como fundo suave da seção “Eixos Temáticos”, sem criar uma seção adicional. A foto fica atrás dos dois cards, com baixa intensidade e camada clara para preservar a leitura.
+
+### V26 — fundo fotográfico apenas nos Eixos Temáticos
+Removidos os fundos/marcas d'água das demais seções. A fotografia das câmeras corporais agora é usada exclusivamente como fundo da seção “Eixos Temáticos”, com tratamento azul-marinho e sobreposição escura para manter os cards e textos legíveis.
+
+
+### V27 — Certificados de participação
+Fluxo: inscrição → check-in/participação → confirmação do administrador → certificado liberado.
+
+Arquivos adicionais:
+- `certificate.html`: página pública de consulta e emissão.
+- `apps_script_certificados.gs`: backend com participação e geração de PDF.
+
+IMPORTANTE: o Apps Script precisa ter três arquivos: `Código.gs` (usar o conteúdo de `apps_script_certificados.gs`), `admin.html` e `certificate.html`.
+
+Na planilha, as novas colunas serão criadas automaticamente: `Participação`, `Data/Hora Participação` e `Certificado PDF ID`.
+
+O certificado é criado em PDF dentro de uma pasta privada no Google Drive e entregue ao participante pelo navegador; a inscrição por si só não libera o certificado.
+
+### V28 — versão pública para o GitHub Pages
+Este pacote contém apenas os arquivos necessários para o site público:
+`index.html`, `style.css`, `script.js`, `config.js` e a pasta `assets`.
+
+O botão “Certificado” já aponta para o Web App publicado com `?cert=1`.
+O atalho “Área do organizador” aponta para `?admin=1`.
+
+### V29 — certificado integrado ao site
+O botão “Acessar certificados” agora abre a página de certificados dentro de uma janela/modal do próprio site, mantendo o participante na página do seminário. Também existe um link secundário para abrir o certificado em nova aba.
+
+### V30 — acesso direto ao certificado
+O botão “Acessar certificados” deixou de carregar o Web App dentro de um iframe/modal. Ele abre diretamente a página de certificados do Google Apps Script em uma nova aba. Isso evita problemas de autenticação/conteúdo de terceiros observados no iframe, enquanto preserva a página pública do seminário.
+
+### V31 — nova implantação do Google Apps Script
+O site público foi atualizado para usar a nova URL do Web App fornecida pelo usuário. Com isso, inscrição, certificado e Área do organizador passam a apontar para a mesma implantação atualizada.
+
+### V34 — protocolo único + autorização de certificado
+- Protocolos de novas inscrições passam a usar sequência única no formato `IPBM-2026-000001`, `IPBM-2026-000002` etc. A sequência é preservada em Script Properties e inicializada considerando os protocolos existentes nesse formato.
+- O administrador pode confirmar a participação separadamente.
+- O administrador pode então usar o botão **Liberar certificado** para cada participante.
+- A emissão pública exige **participação confirmada + certificado liberado**.
+- Revogar a participação bloqueia automaticamente o certificado e remove o PDF previamente gerado.
+- O botão público “Acessar certificados” usa navegação na mesma aba.
+- Ao substituir `apps_script_certificados.gs`, mantenha sua chave administrativa atual em `CONFIG.ADMIN_KEY`.
+
+### V35 — nova implantação do Apps Script
+- Atualizada a URL do Web App para a nova implantação fornecida pela organização.
+- O acesso público aos certificados aponta para `?cert=1` na nova implantação.
+- O link “Certificado” do menu principal também abre diretamente a página de certificados na mesma aba.
+- O botão “Acessar certificados” permanece sem `target="_blank"`, mantendo a abertura na mesma aba.

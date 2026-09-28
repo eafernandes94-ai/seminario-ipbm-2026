@@ -121,3 +121,10 @@ IMPORTANTE: o Apps Script precisa ter três arquivos: `Código.gs` (usar o conte
 Na planilha, as novas colunas serão criadas automaticamente: `Participação`, `Data/Hora Participação` e `Certificado PDF ID`.
 
 O certificado é criado em PDF dentro de uma pasta privada no Google Drive e entregue ao participante pelo navegador; a inscrição por si só não libera o certificado.
+
+### V28 — versão pública para o GitHub Pages
+Este pacote contém apenas os arquivos necessários para o site público:
+`index.html`, `style.css`, `script.js`, `config.js` e a pasta `assets`.
+
+O botão “Certificado” já aponta para o Web App publicado com `?cert=1`.
+O atalho “Área do organizador” aponta para `?admin=1`.

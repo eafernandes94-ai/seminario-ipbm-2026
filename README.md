@@ -138,5 +138,11 @@ O botão “Acessar certificados” deixou de carregar o Web App dentro de um if
 ### V31 — nova implantação do Google Apps Script
 O site público foi atualizado para usar a nova URL do Web App fornecida pelo usuário. Com isso, inscrição, certificado e Área do organizador passam a apontar para a mesma implantação atualizada.
 
-### V33 — certificado na mesma aba, sem iframe
-O botão “Acessar certificados” navega diretamente para o Web App de certificados usando `target="_self"`. Isso mantém a navegação na mesma aba e evita qualquer bloqueio de conteúdo em iframe.
+### V34 — protocolo único + autorização de certificado
+- Protocolos de novas inscrições passam a usar sequência única no formato `IPBM-2026-000001`, `IPBM-2026-000002` etc. A sequência é preservada em Script Properties e inicializada considerando os protocolos existentes nesse formato.
+- O administrador pode confirmar a participação separadamente.
+- O administrador pode então usar o botão **Liberar certificado** para cada participante.
+- A emissão pública exige **participação confirmada + certificado liberado**.
+- Revogar a participação bloqueia automaticamente o certificado e remove o PDF previamente gerado.
+- O botão público “Acessar certificados” usa navegação na mesma aba.
+- Ao substituir `apps_script_certificados.gs`, mantenha sua chave administrativa atual em `CONFIG.ADMIN_KEY`.

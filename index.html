@@ -24,7 +24,7 @@
       <a href="#evento">Evento</a>
       <a href="#programacao">Programação</a>
       <a href="#palestrantes">Palestrantes</a>
-      <a href="#inscricao" class="nav-cta">Inscreva-se</a><a href="https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?cert=1">Certificado</a><a href="https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?admin=1" target="_blank" rel="noopener" class="nav-admin">Área do organizador</a>
+      <a href="#inscricao" class="nav-cta">Inscreva-se</a><a href="https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?cert=1" onclick="return abrirCertificadoPopup(event);">Certificado</a><a href="https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?admin=1" target="_blank" rel="noopener" class="nav-admin">Área do organizador</a>
     </nav>
   </div>
 </header>
@@ -244,7 +244,7 @@
         <h2>Seu certificado será liberado após a confirmação da participação.</h2>
         <p>Depois do evento, utilize seu protocolo e o e-mail informado na inscrição para consultar a liberação e gerar o certificado em PDF.</p>
       </div>
-      <a class="btn primary" href="https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?cert=1">Acessar certificados</a>
+      <a class="btn primary" href="https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?cert=1" onclick="return abrirCertificadoPopup(event);">Acessar certificados</a>
     </div>
   </section>
 
@@ -277,5 +277,30 @@
 
 <script src="config.js"></script>
 <script src="script.js"></script>
+<script>
+function abrirCertificadoPopup(event) {
+  if (event) event.preventDefault();
+  const url = 'https://script.google.com/macros/s/AKfycbw5iORMjPB6zJZNSF6r6eopY40d7WQsvoeD7HbShKUvtG6KqrqU2yW9zClrKLDlra5R7w/exec?cert=1';
+  const features = [
+    'width=980',
+    'height=820',
+    'left=120',
+    'top=60',
+    'resizable=yes',
+    'scrollbars=yes',
+    'toolbar=no',
+    'menubar=no',
+    'location=yes',
+    'status=no'
+  ].join(',');
+  const popup = window.open(url, 'certificadoIPBM', features);
+  if (!popup) {
+    window.location.href = url;
+    return false;
+  }
+  popup.focus();
+  return false;
+}
+</script>
 </body>
 </html>

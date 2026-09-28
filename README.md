@@ -134,3 +134,6 @@ O botão “Acessar certificados” agora abre a página de certificados dentro 
 
 ### V30 — acesso direto ao certificado
 O botão “Acessar certificados” deixou de carregar o Web App dentro de um iframe/modal. Ele abre diretamente a página de certificados do Google Apps Script em uma nova aba. Isso evita problemas de autenticação/conteúdo de terceiros observados no iframe, enquanto preserva a página pública do seminário.
+
+### V31 — nova implantação do Google Apps Script
+O site público foi atualizado para usar a nova URL do Web App fornecida pelo usuário. Com isso, inscrição, certificado e Área do organizador passam a apontar para a mesma implantação atualizada.
